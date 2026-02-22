@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <a href="https://www.w3schools.com/">Registration</a>
+    <form action="/submit_form" method="POST">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="full-name">Name:</label>
+            <input type="text" id="full-name" name="full-name" required placeholder="John Doe"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Ten digit phone number" placeholder="1234567890"><br><br>
+            <label>Password:</label>
+            <input type="password" id="pass" name="pass" required placeholder="create password"><br><br>
+            <label for="subject-group">Subject Group:</label>
+            <select id="subject-group" name="subject-group">
+                <optgroup label="Science">
+                    <option value="maths_biology">Maths Biology</option>
+                    <option value="pure science">Pure Science </option>
+                </option>
+                <optgroup label="Technology">
+                    <option value="computer_science">Computer Science</option>
+                    <option value="commerce maths">Maths Commerce</option>
+                    <option value="history">History</option>
+                </optgroup>
+            </select><br><br>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="sports" name="interest" value="sports">
+            <label for="sports">Sports</label><br><br>
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Tell us about yourself..."></textarea><br><br>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
