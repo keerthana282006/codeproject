@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultra Simple CSS Scene 2026</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #87CEEB;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .sun {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background: #FFD700;
+    border-radius: 50%;
+  }
+  .ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #32CD32;
+  }
+  .house {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 150px;
+    background: #F4A460;
+  }
+  .roof {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 80px solid #B22222;
+  }
+  .door {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 80px;
+    background: #8B4513;
+  }
+  .window {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    bottom: 180px;
+  }
+  .window.left { left: calc(50% - 70px); }
+  .window.right { right: calc(50% - 70px); }
+  .tree {
+    position: absolute;
+    bottom: 100px;
+    left: 15%;
+    width: 15px;
+    height: 60px;
+    background: #8B4513;
+  }
+  .leaves {
+    position: absolute;
+    bottom: 150px;
+    left: calc(15% - 32px);
+    width: 80px;
+    height: 80px;
+    background: #228B22;
+    border-radius: 50%;
+  }
+
+</style>
+</head>
+<body>
+  <div class="scene">
+    <div class="sun"></div>
+    <div class="ground"></div>
+    <div class="roof"></div>
+    <div class="house"></div>
+    <div class="door"></div>
+    <div class="window left"></div>
+    <div class="window right"></div>
+    <div class="tree"></div>
+    <div class="leaves"></div>
+  </div>
+</body>
+</html>
