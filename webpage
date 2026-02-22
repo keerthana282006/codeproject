@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Journey</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                background-color: blanchedalmond;
+                margin: 0;
+                padding:0;
+            }
+            .container {
+                width: 90%;
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            header{
+                text-align: center;
+                padding: 20px 0;
+                background-color: bisque;
+                border-radius: 0 0 10px 10px;
+            }
+
+
+            s1 {
+                margin: 0;
+                color: #333;
+            }
+            main {
+                padding: 20px 0;
+            }
+
+            .stickynote{
+                position: relative;
+                background: #fff9b0;
+                width: 300px;
+                margin: 40px auto;
+                padding: 20px 25px;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+                font-size: 1.1em;
+                line-height: 1.5em;
+                border: 1px solid #e6d86b;
+                transform: rotate(-2deg);
+                border-radius: 5px;
+
+            }
+            .listSection, .tableSection{
+                margin: 40px 0;
+            }
+            .listGroup{
+                margin-bottom: 30px;
+            }
+            ol {
+                padding-left: 20px;
+                border-radius: 8px;
+            }
+            ol li{
+                padding: 5px;
+                border-radius: 8px;
+            }
+            ol li:nth-child(odd){
+                background-color: darkseagreen;
+            }
+            ol li:nth-child(even){
+                background-color: darkolivegreen;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                border-radius: 8px;
+            }
+            table, th, td {
+                border: 1px solid #ccc;
+            }
+
+            th, td {
+                padding: 12px;
+                text-align: center;
+            }
+            th {
+                background-color: #ffcc66;
+            }
+            table tbody tr:nth-child(odd) {
+                background-color: #fff9b0;
+            }
+            table tbody tr:nth-child(even) {
+               background-color: #fff3a6;
+            }
+            footer {
+                text-align: center;
+                padding: 15px 0;
+                background-color: #6eff66;
+                border-radius: 10px 10px 0 0;
+                margin-top: 40px;
+            }
+
+
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <s1>My Travel Journey🌏✈️</s1>
+            </header>
+
+            <main>
+                <div class="stickynote">
+                    <p>Last summer, I visited the beautiful city of
+                        <img src="https://via.placeholder.com/30x30?text=Paris" alt="Paris" class="inline-image">
+                    Paris. The Eiffel Tower was breathtaking! I also tried amazing local cuisine 🍰 and met friendly locals. Each day felt like a dream, and I captured many memories in photos 📸.
+                    </p>
+                </div>
+
+                <section class="listSection">
+                    <s2>Travel Highlights</s2><br><br>
+
+                    <div class="listGroup">
+                        <s3>Top Places Visited</s3><br><br>
+                        <ol type="1">
+                            <li>taj mahal</li>
+                            <li>red fort</li>
+                            <li>lotus temple</li>
+                        </ol>
+                        <ol type="I">
+                            <li>Café de Flore</li>
+                            <li>Le Marais District</li>
+                            <li>Montmartre</li>
+                        </ol>
+                    </div>
+
+                </section>
+                <section class="tableSection">
+                    <s2>Trip Expenses</s2><br><br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Activity</th>
+                                <th>Cost (€)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/06/2026</td>
+                                <td>Flight to Paris</td>
+                                <td>250</td>
+                            </tr>
+                            <tr>
+                                <td>02/06/2026</td>
+                                <td>Louvre Museum Entry</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>03/06/2026</td>
+                                <td>Seine River Cruise</td>
+                                <td>35</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </sticky>
+            </main>
+        </div>
+    </body>
+    </html>
