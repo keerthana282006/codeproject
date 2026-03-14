@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    static boolean isAnagram(String a, String b) {
+        if(a.length()!=b.length()){
+            return false;
+        }
+        char []arr1=a.toLowerCase().toCharArray();
+        char []arr2=b.toLowerCase().toCharArray();
+        sort(arr1);
+        sort(arr2);
+        for(int i=0;i<arr1.length;i++){
+            if(arr1[i]!=arr2[i]){
+                return false;
+            }   
+        }
+        return true;
+    }
+        static void sort(char []chars){
+            int n=chars.length;
+            for(int i=0;i<n-1;i++){
+                for(int j=0;j<n-i-1;j++){
+                    if(chars[j]>=chars[j+1]){
+                        char temp=chars[j];
+                        chars[j]=chars[j+1];
+                        chars[j+1]=temp;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+    
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+        boolean ret = isAnagram(a, b);
+        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+    }
+}
