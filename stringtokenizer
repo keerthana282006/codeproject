@@ -1,0 +1,7 @@
+import java.util.StringTokenizer;
+class Solution {
+    public int countSegments(String s) {
+        StringTokenizer sc=new StringTokenizer(s," ");
+        return sc.countTokens();
+    }
+}
