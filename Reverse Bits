@@ -1,0 +1,21 @@
+import java.util.*;
+class Solution {
+    public int reverseBits(int n) {
+        String s = String.format("%32s", Integer.toBinaryString(n)).replace(' ', '0');
+        long num = 0;
+        StringBuilder st = new StringBuilder();
+        for(int i=0; i<s.length(); i++){
+            num = num * 2 + (s.charAt(i) - '0');
+        }
+        while(num > 0){
+            long r = num % 2;
+            num /= 2;
+            st.append(r);
+        }
+        while (st.length() < 32) {
+            st.append('0');
+        }
+        String resultStr = st.toString();
+        return resultStr.isEmpty() ? 0 : Integer.parseUnsignedInt(resultStr, 2);
+    }
+}
