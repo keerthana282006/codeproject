@@ -1,0 +1,8 @@
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        String m=s+s;
+        String modify=m.substring(1,m.length()-1);
+        return modify.contains(s);
+        
+    }
+}
