@@ -1,0 +1,16 @@
+import java.util.Arrays;
+class Solution {
+    public int maximumGap(int[] nums) {
+        int n=nums.length;
+        int max=0;
+        Arrays.sort(nums);
+        if(n<2)return 0;
+        for(int i=1;i<n;i++){
+            int sub=nums[i]-nums[i-1];
+            if(sub>max){
+                max=sub;
+                }
+            }
+        return max;
+    }
+}
