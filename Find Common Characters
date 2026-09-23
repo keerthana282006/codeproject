@@ -1,0 +1,29 @@
+class Solution {
+    public List<String> commonChars(String[] words) {
+        ArrayList<String>al=new ArrayList<>();
+        int n=words.length;
+        String res=words[0];
+        for(int i=0;i<res.length();i++){
+            char ch=res.charAt(i);
+            boolean flag=true;
+            for(int j=0;j<n;j++){
+                if(words[j].indexOf(ch)==-1){
+                    flag=false;
+                    break;
+                }
+                
+            }
+        if(flag){
+            al.add(String.valueOf(ch));
+            for (int j = 0; j < n; j++) {
+                   int indexToRemove = words[j].indexOf(ch);
+                   words[j] = words[j].substring(0, indexToRemove) + words[j].substring(indexToRemove + 1);
+              }
+            
+        }
+
+        }
+
+    return al;
+}
+}
