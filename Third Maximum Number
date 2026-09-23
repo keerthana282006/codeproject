@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+class Solution { 
+    public int thirdMax(int[] nums) { 
+        int n = nums.length; 
+        int ans = 0; 
+        int arr[] = new int[n]; 
+        Arrays.sort(nums);
+        int uniqueCount = 0; 
+        for(int i = 0; i < n; i++) { 
+            if(uniqueCount == 0 || nums[i] != arr[uniqueCount - 1]) { 
+                arr[uniqueCount] = nums[i]; 
+                uniqueCount++;
+            } 
+        } 
+        if(uniqueCount >= 3) { 
+            ans = arr[uniqueCount - 3]; 
+        } else { 
+            ans = arr[uniqueCount - 1];
+        } 
+        return ans; 
+    } 
+}
