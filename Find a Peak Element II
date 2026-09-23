@@ -1,0 +1,21 @@
+class Solution {
+    public int[] findPeakGrid(int[][] mat) {
+        int n=mat.length;
+        int m=mat[0].length;
+        int max=0;
+        ArrayList<Integer>a=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(mat[i][j]>0){
+                    if(mat[i][j]>max){
+                        max=mat[i][j];
+                        a.clear();
+                        a.add(i);
+                        a.add(j);
+                    }
+                }
+            }
+        }
+        return new int[]{a.get(0),a.get(1)};
+    }
+}
